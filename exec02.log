@@ -1,0 +1,9 @@
+# Logfile created on 2017-08-05 23:28:11 -0300 by logger.rb/v1.2.7
+D, [2017-08-05T23:53:19.783198 #4140] DEBUG -- : Executando..
+D, [2017-08-05T23:59:00.102519 #4256] DEBUG -- : Executando o metodo ADIÇÃO usando os numeros 3 e 9
+D, [2017-08-06T00:00:03.191495 #4278] DEBUG -- : Executando o metodo SUBTRAÇÂO usando os numeros 3 e 9
+D, [2017-08-06T00:00:46.359204 #4287] DEBUG -- : Executando o metodo ADIÇÃO usando os numeros 3 e 9
+I, [2017-08-06T00:01:04.756189 #4294]  INFO -- : Executando o metodo ADIÇÃO usando os numeros 3 e 9
+I, [2017-08-06T00:02:55.698590 #4335]  INFO -- : Executando o metodo SUBTRAÇÂO usando os numeros 3 e 9
+I, [2017-08-06T00:03:03.158314 #4343]  INFO -- : Executando o metodo DIVISÂO usando os numeros 3 e 9
+I, [2017-08-06T00:03:11.972272 #4345]  INFO -- : Executando o metodo MULTIPLICAÇÂO usando os numeros 3 e 9
