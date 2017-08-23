@@ -2,30 +2,23 @@ require 'logger'
 
 $log = Logger.new('exec03.log')
 
-ip_livre = IO.readlines("./ip_livres")
-ip_reservado = IO.readlines("./ip_reservado")
+ip_disponivel = File.read("./ip_livres")
+ip_indisponiveis = File.open("./ip_indisponiveis", "w")
 
-numero_ip_livre = ip_livre.length
+puts ip_disponivel
 
-posicao = 0
+#for ip in ip_disponivel
 
-while posicao <= numero_ip_livre do
-    ip = (ip_livre[posicao])
-    if ip_reservado.include?(ip) == FALSE
-        ip_reservado.push(ip)
-        print "Por favor, use este IP livre #{ip}"
-        File.open("./ip_reservado", "a+") { |f| f << "#{ip}" }
-        break
-    else
-       posicao += 1
+ip_disponivel.each do |ip|
+    if ip_indisponiveis.include?(ip) == TRUE
+        ip_indisponiveis.gsub!(/(|\s){ip}(|\s)/, "").chomp!
+        ip_indisponiveis = ip_indisponiveis.gsub(/^$\n/, '')
+    elsif ip_indisponiveis.include?(ip) == FALSE
+        ip_indisponiveis << ip
+        puts "Nome do Solicitante?" 
+        solicitante = gets.chomp
+        $log.info("O Solicitante #{solicitante} recebeu o seguinte ip livre #{ip}")
+    else 
+        print "Não mais ip disponivel"
     end
-end
-
-while posicao > numero_ip_livre do
-    print "Nenhum endereço disponivel nesta subnet, por favor, forneça as informações abaixo"
-    print "Nome ?" 
-    nome = gets.chomp
-    print "Email ?" 
-    email = get.chomp
-    $log.info("O usuário #{nome} e email #{email} solicitou um IP disponivel")
 end
