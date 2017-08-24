@@ -1,1 +1,7 @@
-# Logfile created on 2017-08-13 00:05:10 -0300 by logger.rb/v1.2.7
+I, [2017-08-23T23:12:39.152820 #5516]  INFO -- : O Solicitante Marcio recebeu o seguinte ip livre 10.10.1.5
+
+I, [2017-08-23T23:12:56.074998 #5519]  INFO -- : O Solicitante Samuel recebeu o seguinte ip livre 10.10.1.10
+
+I, [2017-08-23T23:13:32.642493 #5538]  INFO -- : O Solicitante Roberta recebeu o seguinte ip livre 10.10.1.20
+
+I, [2017-08-23T23:13:58.842175 #5543]  INFO -- : O Solicitante Marcio recebeu o seguinte ip livre 10.10.1.24
